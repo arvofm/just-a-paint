@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A minimalist painting app that lets you export your works.">
+    <title>Just A Paint</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="./tablet.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="./mobile.css">
+    <script src="app.js" defer></script>
+</head>
+    <body>
+        <div id="toolbar">
+            <h1 id="title">just a paint</h1>
+            <div class="divider1"></div>
+
+            <div id="settings">
+                <label for="color-input">Pen color: <span id="pen-color-output">white</span></label>
+                <div class="divider1"></div>
+                <input type="color" aria-label="select pen color" value="#FFF" id="color-input">
+                <div class="divider2"></div>
+                <label for="pen-size-input">Pen size: <span id="pen-size-output">3</span></label>
+                <div class="divider1"></div>
+                <input type="range" min="1" max="30" value="3" aria-label="select pen size" id="pen-size-input">
+                <div class="divider2"></div>
+                <button id="clear-button">clear all</button>
+            </div>
+        </div>
+
+        <canvas id="one" aria-label="a canvas stands here">
+            Switch to a browser that supports canvas.
+        </canvas>
+
+
+    </body>
+</html>
+
