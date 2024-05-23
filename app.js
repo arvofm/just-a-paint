@@ -8,6 +8,7 @@ const shapePicker = document.querySelector('select#pen-shape-input');
 const shapeOutput = document.querySelector('span#pen-shape-output');
 const sizePicker = document.querySelector('input[type="range"]');
 const sizeOutput = document.querySelector('span#pen-size-output');
+const exportButton = document.querySelector('button#export-button');
 const clearBtn = document.querySelector('button#clear-button');
 
 const firstColor = 'rgb(255, 255, 255)';
@@ -115,6 +116,14 @@ shapePicker.oninput = e =>  {
 }
 
 sizePicker.oninput = e => sizeOutput.textContent = penSize = e.target.value;
+
+exportButton.onclick = () => {
+    const url = canvas.toDataURL('image/png');
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'image.png';
+    a.click();
+};
 
 clearBtn.onclick = () => clearCanvas();
 
