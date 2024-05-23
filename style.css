@@ -52,6 +52,8 @@ canvas#one {
 button {
     font-size: 1.1rem;
     width: 7vw;
+    min-width: 4vw;
+    max-width: 8vw;
     height: 3vh;
     margin: 0.5rem;
     align-self: center;
@@ -66,6 +68,30 @@ button {
 button:hover {
     border: 4px solid #909090;
     font-size: 1.05rem;
+}
+
+select {
+    font-size: 1.1rem;
+    width: 12vw;
+    min-width: 8vw;
+    max-width: 13vw;
+    height: 3vh;
+    padding: 0 0.5rem;
+    background-color: #656565;
+    border-radius: 3px;
+    border: 1px solid #909090;
+    color: #FEFEFE;
+    transition: 0.1s linear;
+}
+
+select:hover {
+    border: 4px solid #909090;
+    font-size: 1.05rem;
+}
+
+select:focus {
+    border: 1px solid #909090;
+    font-size: 1.1rem;
 }
 
 div.divider1 {

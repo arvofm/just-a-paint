@@ -20,9 +20,21 @@
                 <div class="divider1"></div>
                 <input type="color" aria-label="select pen color" value="#FFF" id="color-input">
                 <div class="divider2"></div>
-                <label for="pen-size-input">Pen size: <span id="pen-size-output">3</span></label>
+                <label for="pen-shape-input">Pen shape: <span id="pen-shape-output">line</span></label>
                 <div class="divider1"></div>
-                <input type="range" min="1" max="30" value="3" aria-label="select pen size" id="pen-size-input">
+                <select id="pen-shape-input" name="pen-shape-input">
+                    <option value="line"> line </option>
+                    <option value="fill-circle"> fill - circle </option>
+                    <option value="fill-triangle"> fill - triangle </option>
+                    <option value="fill-square"> fill - square </option>
+                    <option value="stroke-circle"> stroke - circle </option>
+                    <option value="stroke-triangle"> stroke - triangle </option>
+                    <option value="stroke-square"> stroke - square </option>
+                </select>
+                <div class="divider2"></div>
+                <label for="pen-size-input">Pen size: <span id="pen-size-output">10</span></label>
+                <div class="divider1"></div>
+                <input type="range" min="2" max="50" value="10" aria-label="select pen size" id="pen-size-input">
                 <div class="divider2"></div>
                 <button id="clear-button">clear all</button>
             </div>

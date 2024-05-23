@@ -6,8 +6,8 @@ The project should take the steps
 - [X] Add clear canvas button
 - [X] Add color picker
 - [X] Handle the drawing on canvas for the simplest way
-- [ ] Add thickness customization
 - [ ] Add shape chooser (basic filled shapes like triangle, rectangle, circle, etc.)
+- [ ] Add thickness customization
 - [ ] Add the ability to save the canvas state to local storage with a save button
 - [ ] Add load button that will load the canvas state from local storage
 - [ ] Add export button that will save the canvas state to a file (png, jpg, etc.)
