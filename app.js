@@ -42,7 +42,8 @@ function init() {
     ctx.lineCap = 'round';
     clearCanvas();
     colorPicker.value = ctx.fillStyle = ctx.strokeStyle = firstColor;
-    penSize = Number(sizePicker.value);
+    penSize = Number(sizePicker.value = sizeOutput.textContent);
+    shapePicker.value = 'line';
     ctx.lineWidth = 1;
 }
 
